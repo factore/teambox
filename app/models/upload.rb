@@ -30,6 +30,7 @@ class Upload < RoleRecord
   include PageWidget
 
   DOWNLOADS_URL = "/downloads/:id/:style/:basename.:extension"
+  FILE_NAME_TROUBLEMAKER_CHARS_REGEXP = /['`]+/
 
   has_attached_file :asset,
     :styles => { :thumb => "150x150>" },
@@ -40,7 +41,7 @@ class Upload < RoleRecord
     :s3_permissions => 'private',
     :s3_headers => {'Cache-Control' => 'max-age=157680000'}
 
-  before_post_process :image?
+  before_post_process :sanitize_file_name, :image?
   
   validates_attachment_size :asset, 
                             :less_than => Teambox.config.asset_max_file_size.to_i.megabytes, 
@@ -198,4 +199,11 @@ class Upload < RoleRecord
     end
     true
   end
+
+  private
+
+  def sanitize_file_name
+    self.asset.instance_write :file_name, self.asset.instance.asset_file_name.gsub(FILE_NAME_TROUBLEMAKER_CHARS_REGEXP, '')
+  end
+
 end
