@@ -33,13 +33,13 @@ GIT
     will_paginate (3.0.pre3)
 
 GIT
-  remote: https://github.com/remi/rack-staticifier.git
+  remote: http://github.com/remi/rack-staticifier.git
   revision: 642ca9f4d8634270be031725077a748a1c8f6397
   specs:
     rack-staticifier (0.1.6)
 
 GIT
-  remote: https://github.com/teambox/trimmer.git
+  remote: http://github.com/teambox/trimmer.git
   revision: 22a43334e7ea5483e1673e35c464bb787a9a5b77
   specs:
     trimmer (0.0.1)
