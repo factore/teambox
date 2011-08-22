@@ -33,19 +33,19 @@ GIT
       activerecord (~> 3.0.5)
 
 GIT
-  remote: git://github.com/teambox/will_paginate.git
-  revision: e69b364e79ce1fd24e3a10fcc87604969902f0a9
-  specs:
-    will_paginate (3.0.pre3)
-
-GIT
-  remote: http://github.com/teambox/trimmer.git
+  remote: git://github.com/teambox/trimmer.git
   revision: 22a43334e7ea5483e1673e35c464bb787a9a5b77
   specs:
     trimmer (0.0.1)
       i18n (>= 0.5.0)
       rack (>= 0.9.1)
       tilt (>= 1.2.2)
+
+GIT
+  remote: git://github.com/teambox/will_paginate.git
+  revision: e69b364e79ce1fd24e3a10fcc87604969902f0a9
+  specs:
+    will_paginate (3.0.pre3)
 
 GEM
   remote: http://rubygems.org/

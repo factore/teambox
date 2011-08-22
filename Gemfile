@@ -32,7 +32,7 @@ gem 'hashie'
 gem 'tilt', '~> 1.2.2'
 gem 'choices', :git => "git://github.com/teambox/choices.git"
 gem 'rack-staticifier', :git => "git://github.com/remi/rack-staticifier.git"
-gem 'trimmer', :git => "http://github.com/teambox/trimmer.git"
+gem 'trimmer', :git => "git://github.com/teambox/trimmer.git"
 
 gem "will_paginate", :git=>"git://github.com/teambox/will_paginate.git"
 gem 'thinking-sphinx', '2.0.1', :require => 'thinking_sphinx'
