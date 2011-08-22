@@ -7,6 +7,12 @@ GIT
       activesupport (>= 3.0.0)
 
 GIT
+  remote: git://github.com/remi/rack-staticifier.git
+  revision: 642ca9f4d8634270be031725077a748a1c8f6397
+  specs:
+    rack-staticifier (0.1.6)
+
+GIT
   remote: git://github.com/teambox/activesupport-i18n-patch.git
   revision: 2e835783c0ea7062ad280b71b04060bd9b89e1a4
   specs:
@@ -31,12 +37,6 @@ GIT
   revision: e69b364e79ce1fd24e3a10fcc87604969902f0a9
   specs:
     will_paginate (3.0.pre3)
-
-GIT
-  remote: http://github.com/remi/rack-staticifier.git
-  revision: 642ca9f4d8634270be031725077a748a1c8f6397
-  specs:
-    rack-staticifier (0.1.6)
 
 GIT
   remote: http://github.com/teambox/trimmer.git
